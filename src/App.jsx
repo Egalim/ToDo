@@ -69,7 +69,7 @@ function App() {
                 value={e.task} />
               <div className="btns">
                 <button
-                  onClick={() => complite(index)}
+                  onClick={() => complete(index)}
                   className='btn_yes'>сделано</button>
                 <button
                   onClick={() => deleteTask(index)}
