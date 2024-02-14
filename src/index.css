@@ -94,8 +94,7 @@ button {
 
 .container_task {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  gap: 15px;
 }
 
 .task {
@@ -115,10 +114,10 @@ button {
 }
 
 .btn_yes {
-  padding: 10px;
+  padding: 10px 15px;
   background-color: #04ca25;
   border: none;
-  border-radius: 10px 15px;
+  border-radius: 10px;
 }
 
 .btn_no{
