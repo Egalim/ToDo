@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
@@ -16,8 +14,8 @@ function App() {
 
   const setList = (task) => {
     if (task) {
-      setArray([...array, { task: task, complite: false }])
-      localStorage.setItem('list', JSON.stringify([...array, { task: task, complite: false }]))
+      setArray([...array, { task: task, complete: false }])
+      localStorage.setItem('list', JSON.stringify([...array, { task: task, complete: false }]))
     }
   }
 
@@ -29,9 +27,9 @@ function App() {
     localStorage.setItem('list', JSON.stringify(updateArray))
   }
 
-  const complite = (index) => {
+  const complete = (index) => {
     const updateArray = array.map((item, i) =>
-      i == index ? { ...item, complite: true } : item
+      i == index ? { ...item, complete: true } : item
     )
     setArray(updateArray)
     localStorage.setItem('list', JSON.stringify(updateArray))
@@ -66,7 +64,7 @@ function App() {
         {
           array.map((e, index) => (
             <div className="container_task" key={index}>
-              <input className={"task " + (e.complite ? "line" : "text")}
+              <input className={"task " + (e.complete ? "line" : "text")}
                 onChange={(a) => updateList(index, a.target.value)}
                 value={e.task} />
               <div className="btns">
