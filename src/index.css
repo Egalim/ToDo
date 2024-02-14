@@ -65,7 +65,7 @@ input {
   border: 1px solid #de4fd2;
   border-radius: 10px;
   padding: 10px 15px;
-  width: 500px;
+  width: 600px;
 }
 
 button {
@@ -75,8 +75,9 @@ button {
 .task_input {
   display: flex;
   align-items: center;
-  margin-bottom: 50px;
-  gap: 10px;
+  margin-bottom: 30px;
+  gap: 15px;
+  width: 800px;
 }
 
 .add_btn {
@@ -93,10 +94,8 @@ button {
 
 .container_task {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  width: 100%;
-  gap: 10px;
 }
 
 .task {
@@ -112,11 +111,11 @@ button {
 .btns {
   display: flex;
   gap: 5px;
+  color: #ffffff;
 }
 
 .btn_yes {
   padding: 10px;
-  color: #ffffff;
   background-color: #04ca25;
   border: none;
   border-radius: 10px 15px;
@@ -124,7 +123,6 @@ button {
 
 .btn_no{
   padding: 10px 15px;
-  color: #ffffff;
   background-color: #c2071a;
   border: none;
   border-radius: 10px;
